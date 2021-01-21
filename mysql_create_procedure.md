@@ -12,6 +12,7 @@ DELIMITER ;
 CALL SP_TEST()
 ```
 ## 만날 수 있는 오류
+```
 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '()' at line 1
-</br>
--> BEGIN ~ END 구문 내 쿼리 마지막에 세미콜론(;) 을 하지 않은 경우 발생
+```
+- BEGIN ~ END 구문 내 쿼리 마지막에 세미콜론(;) 을 하지 않은 경우 발생
