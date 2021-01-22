@@ -31,11 +31,11 @@ $ sudo docker exec -it 4c068fdb3525 /bin/bash
 ## 삭제
 ```bash
 # 컨테이너 삭제
-sudo docker rm CONTAINER_ID
+$ sudo docker rm CONTAINER_ID
 
 # 이미지 삭제
-sudo docker rmi IMAGE_ID
+$ sudo docker rmi IMAGE_ID
 
 # 모든 이미지 삭제
-sudo docker image prune -a
+$ sudo docker image prune -a
 ```
