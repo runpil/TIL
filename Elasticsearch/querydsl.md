@@ -35,7 +35,6 @@
     - 다음 두 예제는 결과가 동일
 
     ```
-
     # 쿼리 없이 실행
     GET my_index/_search
 
@@ -55,9 +54,9 @@
     # message 필드에 dog가 포함된 모든 문서 검색
     GET my_index/_search
     {
-    	"query": {
-    		"match": {
-    			"message": "dog"
+        "query": {
+            "match": {
+                "message": "dog"
     		}
     	}
     }
