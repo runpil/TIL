@@ -15,7 +15,7 @@
 
 - 데이터 입력
 
-    ```json
+    ```
     # my_index 인덱스에 벌크로 데이터 입력
     POST my_index/_bulk
     {"index":{"_id":1}}
@@ -34,7 +34,7 @@
     - 해당 인덱스의 모든 도큐먼트를 검색하는 쿼리
     - 다음 두 예제는 결과가 동일
 
-    ```json
+    ```
 
     # 쿼리 없이 실행
     GET my_index/_search
@@ -51,7 +51,7 @@
 - match
     - 풀 텍스트 검색에 사용되는 가장 일반적인 쿼리
 
-    ```json
+    ```
     # message 필드에 dog가 포함된 모든 문서 검색
     GET my_index/_search
     {
@@ -65,7 +65,7 @@
 
     - match 검색에 여러 개의 검색어를 집어넣게 되면 디폴트로 OR 조건으로 검색되어 입력된 검색어 별로 하나라도 포함된 문서를 모두 검색
 
-    ```json
+    ```
     # match 쿼리로 message 필드에서 quick dog로 검색
     GET my_index/_search
     {
@@ -79,7 +79,7 @@
 
     - 검색어가 여럿일 때 검색 조건을 and로 바꾸려면 operator 옵션을 사용할 수 있다.
 
-    ```json
+    ```
     # match 쿼리 AND 조건으로 quick dog 검색
     GET my_index/_search
     {
@@ -98,7 +98,7 @@
     - 입력된 검색어를 순서까지 고려하여 검색 수행
     - "lazy dog"라는 구문을 공백을 포함해 정확히 일치하는 내용 검색
 
-    ```json
+    ```
     # match_phrase 쿼리로 "lazy dog" 구문 검색
     GET my_index/_search
     {
