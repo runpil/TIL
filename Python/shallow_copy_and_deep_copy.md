@@ -1,7 +1,7 @@
 ## 얕은 복사(Shallow Compy)와 깊은 복사(Deep Copy)
 - 얕은 복사
   - 새로운 복합 객체를 만들고, (가능한 범위까지) 원본 객체를 가리키는 참조를 새로운 복합 객체에 삽입한다.
-  - 얕은 복사 예제
+  - 얕은 복사 예시
     ```python
     import copy
 
@@ -41,7 +41,7 @@
     a = ["kim", "lee", ["park", "moon"]]
     b = copy.deepcopy(a)  # 깊은 복사
     b[2][1] = 'yoon'
-    
+
     print('a = ', a)
     print('b = ', b)
     a =  ['kim', 'lee', ['park', 'moon']]
