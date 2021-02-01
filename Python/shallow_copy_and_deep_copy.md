@@ -8,6 +8,7 @@
     a = ["kim", "lee", "park", "moon"]
     b = copy.copy(a)  # 얕은 복사
     b[2] = 'yoon'
+
     print('a = ', a)
     print('b = ', b)
     a =  ['kim', 'lee', 'park', 'moon']
@@ -21,6 +22,7 @@
     a = ["kim", "lee", ["park", "moon"]]
     b = copy.copy(a)  # 얕은 복사
     b[2][1] = 'yoon'
+
     print('a = ', a)
     print('b = ', b)
     a =  ['kim', 'lee', ['park', 'yoon']]
@@ -39,6 +41,7 @@
     a = ["kim", "lee", ["park", "moon"]]
     b = copy.deepcopy(a)  # 깊은 복사
     b[2][1] = 'yoon'
+    
     print('a = ', a)
     print('b = ', b)
     a =  ['kim', 'lee', ['park', 'moon']]
