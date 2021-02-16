@@ -2,7 +2,7 @@
 - 도커 이미지 업로드
   ```bash
   # 도커 허브 접속
-  sudo docker loing
+  sudo docker login
   id / pw
 
   # build
