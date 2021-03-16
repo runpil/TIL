@@ -1,6 +1,6 @@
 ## Convert timestamp timezone in Logstash for output index name
 
-```json
+```
 filter {
   ruby {
         init => "require 'time'"
