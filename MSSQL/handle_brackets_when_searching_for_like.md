@@ -4,4 +4,3 @@ select col1, col2
 from test_table
 where like ('%' + replace(col1, '[', '[[]') + '%')
 ```
-Handle brackets when searching for'Like'.
